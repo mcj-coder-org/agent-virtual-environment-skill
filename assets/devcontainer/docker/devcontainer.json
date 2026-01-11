@@ -1,0 +1,21 @@
+{
+  "name": "agent-virtual-environment (docker)",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "args": {
+      "USERNAME": "agent"
+    }
+  },
+  "remoteUser": "agent",
+  "containerEnv": {
+    "DOTNET_CLI_TELEMETRY_OPTOUT": "1",
+    "NODE_OPTIONS": "--max-old-space-size=4096"
+  },
+  "runArgs": [
+    "--security-opt=no-new-privileges"
+  ],
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind,consistency=cached"
+  ],
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+}
