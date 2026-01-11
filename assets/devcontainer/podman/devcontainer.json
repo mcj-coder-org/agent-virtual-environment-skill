@@ -1,7 +1,7 @@
 {
   "name": "agent-virtual-environment (podman)",
   "build": {
-    "dockerfile": "../Dockerfile",
+    "dockerfile": "Dockerfile",
     "args": {
       "USERNAME": "vscode"
     }

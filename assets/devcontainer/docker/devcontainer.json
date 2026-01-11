@@ -1,7 +1,7 @@
 {
   "name": "agent-virtual-environment (docker)",
   "build": {
-    "dockerfile": "../Dockerfile",
+    "dockerfile": "Dockerfile",
     "args": {
       "USERNAME": "vscode"
     }
