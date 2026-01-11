@@ -12,6 +12,7 @@ Default to least privilege with explicit, documented escalation. Always separate
 - Greenfield or migration
 - Runtime: Docker or Podman
 - Toolchains: Node.js version, .NET SDK version
+- Non-root username (default: `vscode`) and UID/GID if custom
 - Required host integrations (mounts, sockets, network)
 
 ## Workflow

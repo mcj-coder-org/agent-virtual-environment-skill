@@ -3,10 +3,10 @@
   "build": {
     "dockerfile": "../Dockerfile",
     "args": {
-      "USERNAME": "agent"
+      "USERNAME": "vscode"
     }
   },
-  "remoteUser": "agent",
+  "remoteUser": "vscode",
   "containerEnv": {
     "DOTNET_CLI_TELEMETRY_OPTOUT": "1",
     "NODE_OPTIONS": "--max-old-space-size=4096"
